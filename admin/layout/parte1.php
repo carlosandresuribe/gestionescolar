@@ -32,13 +32,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="<?php echo APP_URL; ?>/public/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?= APP_URL; ?>/public/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo APP_URL; ?>/public/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= APP_URL; ?>/public/dist/css/adminlte.min.css">
   <!-- Sweet alert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?= APP_URL; ?>/public/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= APP_URL; ?>/public/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= APP_URL; ?>/public/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -51,7 +56,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php APP_URL;?>" class="nav-link"><?php echo APP_NAME;?></a>
+        <a href="<?=APP_URL;?>" class="nav-link"><?=APP_NAME;?></a>
       </li>
     </ul>
 
@@ -137,6 +142,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="<?=APP_URL;?>/admin/roles" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Listado de roles</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon bi bi-people-fill"></i>
+              <p>
+                Usuarios
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?=APP_URL;?>/admin/usuarios" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Listado de usuarios</p>
                 </a>
               </li>
             </ul>

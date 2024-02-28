@@ -21,7 +21,7 @@
     }
 
         date_default_timezone_set("America/Bogota");
-        $fechahora = date('y-m-d h:m:s');
+        $fechaHora = date('y-m-d h:m:s');
         $fecha_actual=date('y-m-d');
         $dia_actual=date('d');
         $mes_actual=date('m');

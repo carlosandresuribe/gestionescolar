@@ -2,7 +2,6 @@
     include('../app/config.php');
     include ('../admin/layout/parte1.php');
 ?>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <br>
@@ -19,6 +18,6 @@
 
 <?php 
   include('../admin/layout/parte2.php'); 
-  include('../layout/mensajes.php'); 
+  include('../layout/mensajes.php');
 
 ?>
